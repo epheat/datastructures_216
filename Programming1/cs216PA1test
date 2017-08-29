@@ -1,0 +1,20 @@
+#!/bin/bash
+#CS216:003
+#2/12/2015
+#Programming Assignment 1
+#Evan Heaton
+continue=""
+#this syntax is difficult. Had to use [[ and ]] for whatever reason
+while [[ "$continue" != "q" && "$continue" !=  "Q" ]]
+do 
+	echo "Student searching service. Enter <q or Q> to quit, or press Enter to continue."
+	read continue
+	#if q or Q, quit the script
+	if [[ "$continue" = "q" || "$continue" = "Q" ]]
+	then
+		echo "Thanks for using this program!"
+	else
+		./cs216PA1
+	fi
+done
+exit 0

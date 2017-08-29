@@ -1,0 +1,15 @@
+Evan Heaton
+lab7Report.txt
+
+Running Lab7_0 results in inf.
+  the way that c++ handles floating point division is strange, and cannot represent 0 completely;
+  when floating point division has divide by zero, the result is NaN or inf
+
+Running Lab7_1 results in a divide by zero exception, aborting the program.
+  this is because there is no exception handling "catch" block, so the program exits immediately
+  upon throwing the exception
+
+Running Lab7_2 results in a divide by zero exception, which is caught and handled robustly.
+  the addition of a try{}catch{} allows for the program to handle the exception robustly without
+  aborting the entire program
+

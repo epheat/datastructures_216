@@ -1,0 +1,16 @@
+#CS216:003
+#3/4/2015
+#Programming Assignment 2
+#Evan Heaton
+echo "Welcome to ePh, linux driven c++ based text editing software"
+echo "Type a few lines to start your file. Stop typing with CTRL+D."
+echo "Then use the following commands:"
+echo "L     - List all lines in the file."
+echo "I [n] - Insert text at line n."
+echo "D [n] - Delete line n."
+echo "Q     - Save into a file and quit."
+echo ""
+cat > file.txt
+./ePh file.txt
+echo "File saved as [file.txt]. Thank you for using ePh."
+exit 0
